@@ -1,0 +1,118 @@
+body {
+  background-color: #121212;
+  color: whitesmoke;
+}
+
+.home-container {
+  display: flex;
+  padding: 60px 3vw 20px;
+}
+
+.home-container h1 {
+  color: #14ffec;
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+.home-container h4 {
+  font-size: 1em;
+  margin: 20px 0;
+}
+
+.home-container h5 {
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+.home-container h6 {
+  color: gray;
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  color: gray;
+  font-size: 0.8em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 120%;
+}
+
+.mini-profile {
+  background-color: #1d1d1d;
+  width: 20vw;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.me-container {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.profile-details row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-skills li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 0.8em;
+}
+
+.profile-skills li span {
+  font-size: 30px;
+  color: #14ffec;
+  margin-bottom: 10px;
+}
+
+.profile-contacts {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 20px;
+}
+
+.profile-contacts ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts-icon {
+  font-size: 1.5em;
+  margin: 0 20px;
+}
+
+.content-container {
+  width: 60vw;
+  background-color: rgb(2, 36, 2);
+}
