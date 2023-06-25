@@ -3,49 +3,135 @@ body {
   color: whitesmoke;
 }
 
-.home-container {
-  display: flex;
-  padding: 60px 3vw 20px;
+/* CSS for screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+  .home-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .mini-profile {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-details {
+    padding: 20px;
+  }
+
+  .profile-details row {
+    flex-direction: column;
+  }
+
+  .profile-skills {
+    flex-direction: column;
+  }
+
+  .profile-contacts {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .content-container {
+    width: 100%;
+  }
 }
 
+/* CSS for screens between 768px and 1023px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-container {
+    padding: 40px 2vw 20px;
+  }
+
+  .mini-profile {
+    width: 30vw;
+  }
+
+  .content-container {
+    width: 70vw;
+  }
+}
+
+/* CSS for screens larger than or equal to 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+  .home-container {
+    padding: 60px 3vw 20px;
+    display: flex;
+  }
+
+  .mini-profile {
+    width: 20vw;
+    margin-right: 50px;
+    margin-bottom: 0;
+    position: sticky;
+  }
+
+  .content-container {
+    width: 60vw;
+  }
+
+  /* Additional CSS adjustments for laptops with 150% scale in 1920x1080 */
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    .home-container {
+      padding: 40px 3vw 20px;
+      display: flex;
+    }
+
+    .mini-profile {
+      width: 25vw;
+      position: sticky;
+    }
+
+    .content-container {
+      width: 60vw;
+    }
+  }
+}
+
+/* Common CSS rules across all screen sizes */
 .home-container h1 {
   color: #14ffec;
-  font-size: 1.2em;
-  margin: 20px;
+  font-size: 1em;
+  margin: 2vh 0 1vh;
+}
+
+.home-container h2 {
+  color: white;
+  font-size: 2em;
 }
 
 .home-container h4 {
-  font-size: 1em;
-  margin: 20px 0;
+  color: #14ffec;
+  font-size: 0.8em;
+  margin: 5px 0;
 }
 
 .home-container h5 {
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
 }
 
 .home-container h6 {
   color: gray;
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 10px;
 }
 
 .home-container p {
   color: gray;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 120%;
 }
 
 .mini-profile {
+  height: 90vh;
   background-color: #1d1d1d;
-  width: 20vw;
-  margin-right: 50px;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .me-container {
@@ -54,12 +140,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 10px;
+  padding: 20px 10px;
 }
 
 .profile-pic {
   border-radius: 50%;
-  width: 150px;
+  width: 120px;
 }
 
 .profile-details {
@@ -74,17 +160,18 @@ body {
 }
 
 .profile-skills {
+  height: 15vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .profile-skills li {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  font-size: 0.8em;
+  margin: 1vh;
+  font-size: 0.7em;
 }
 
 .profile-skills li span {
@@ -94,7 +181,7 @@ body {
 }
 
 .profile-contacts {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -108,11 +195,80 @@ body {
 }
 
 .contacts-icon {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0 20px;
 }
 
+.contacts-icon:hover {
+  color: #14ffec;
+  transition: 0.5s;
+}
+
 .content-container {
-  width: 60vw;
-  background-color: rgb(2, 36, 2);
+}
+
+.thumbnail-container {
+  background-color: transparent;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.thumbnail-container h2 {
+  margin: 2vw;
+  text-shadow: 1px 1px 2px #1d1d1d;
+}
+
+.thumbnail-button {
+  margin: 2vw;
+  padding: 1vw;
+  color: #14ffec;
+  background-color: #1d1d1d;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #14ffec;
+}
+
+.thumbnail-button:hover {
+  box-shadow: 0 0 5px #14ffec;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+
+.services-container h1 {
+  margin-left: 1vw;
+}
+
+.services-card {
+  width: 30%;
+  margin: 1vw;
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #14ffec;
+}
+
+.services-card:hover {
+  box-shadow: 0 0 5px #14ffec;
+}
+
+.services-card:hover .services-card-title {
+  color: #14ffec;
+}
+
+.services-card-title {
+  font-size: 0.9em;
+}
+
+.services-card-text {
+  text-align: justify;
 }

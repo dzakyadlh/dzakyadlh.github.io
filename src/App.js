@@ -3,6 +3,7 @@ import "./reset.css";
 import "./App.css";
 
 import Home from "./pages/home";
+import Profile from "./pages/profile";
 
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -17,7 +18,12 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/projects" element={<Home />} />
+        <Route path="/services" element={<Home />} />
+        <Route path="/contacts" element={<Home />} />
+        <Route path="/about" element={<Home />} />
       </Routes>
     </div>
   );
