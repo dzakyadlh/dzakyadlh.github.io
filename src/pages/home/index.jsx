@@ -94,7 +94,7 @@ const Home = () => {
           </div>
           <div className="services-container">
             <h1>My Services</h1>
-            <div className="d-flex">
+            <div className="services-cards">
               {services.map((row, index) => (
                 <Card className="services-card" key={index}>
                   <Card.Body>
