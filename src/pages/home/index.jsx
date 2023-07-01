@@ -1,7 +1,6 @@
 import React from "react";
 import {} from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faLinkedinIn,
@@ -14,7 +13,6 @@ import "./style.css";
 import Navbar from "../../components/navbar";
 import PP from "../../assets/images/kamiya.jpg";
 import Thumb from "../../assets/images/sukidakara.png";
-import Scripts from "../../scripts";
 
 const Home = () => {
   const services = [

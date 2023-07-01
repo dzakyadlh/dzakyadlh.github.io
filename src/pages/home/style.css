@@ -36,156 +36,158 @@ body {
 
 .home-container p {
   color: gray;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 120%;
 }
 
-.mini-profile {
-  height: 90vh;
-  background-color: #1d1d1d;
-  display: flex;
-  flex-direction: column;
-}
+.home-container {
+  .mini-profile {
+    height: 90vh;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+  }
 
-.me-container {
-  background-color: #222222;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 10px;
-}
+  .me-container {
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+  }
 
-.profile-pic {
-  border-radius: 50%;
-  width: 120px;
-}
+  .profile-pic {
+    border-radius: 50%;
+    width: 120px;
+  }
 
-.profile-details {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 20px;
-}
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
 
-.profile-details row {
-  display: flex;
-  justify-content: space-between;
-}
+  .profile-details row {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.profile-skills {
-  height: 15vh;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
+  .profile-skills {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
-.profile-skills li {
-  display: flex;
-  flex-direction: column;
-  margin: 1vh;
-  font-size: 0.7em;
-}
+  .profile-skills li {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh;
+    font-size: 0.7em;
+  }
 
-.profile-skills li span {
-  font-size: 30px;
-  color: #14ffec;
-  margin-bottom: 10px;
-}
+  .profile-skills li span {
+    font-size: 30px;
+    color: #14ffec;
+    margin-bottom: 10px;
+  }
 
-.profile-contacts {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin: 0 auto 20px;
-}
+  .profile-contacts {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto 20px;
+  }
 
-.profile-contacts ul {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+  .profile-contacts ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-.contacts-icon {
-  font-size: 1.2em;
-  margin: 0 20px;
-}
+  .contacts-icon {
+    font-size: 1.2em;
+    margin: 0 20px;
+  }
 
-.contacts-icon:hover {
-  color: #14ffec;
-  transition: 0.5s;
-}
+  .contacts-icon:hover {
+    color: #14ffec;
+    transition: 0.5s;
+  }
 
-.thumbnail-container {
-  background-color: transparent;
-  width: 100%;
-  height: 40vh;
-  overflow: hidden;
-  position: relative;
-}
+  .thumbnail-container {
+    background-color: transparent;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+  }
 
-.thumbnail {
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-}
+  .thumbnail {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
 
-.thumbnail-container h2 {
-  margin: 2vw;
-  text-shadow: 1px 1px 2px #1d1d1d;
-}
+  .thumbnail-container h2 {
+    margin: 2vw;
+    text-shadow: 1px 1px 2px #1d1d1d;
+  }
 
-.thumbnail-button {
-  margin: 2vw;
-  padding: 1vw;
-  color: #14ffec;
-  background-color: #1d1d1d;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 2px #14ffec;
-}
+  .thumbnail-button {
+    margin: 2vw;
+    padding: 1vw;
+    color: #14ffec;
+    background-color: #1d1d1d;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #14ffec;
+  }
 
-.thumbnail-button:hover {
-  box-shadow: 0 0 5px #14ffec;
-}
+  .thumbnail-button:hover {
+    box-shadow: 0 0 5px #14ffec;
+  }
 
-.services-container {
-  display: flex;
-  flex-direction: column;
-  padding: 1vw;
-}
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+  }
 
-.services-container h1 {
-  margin-left: 1vw;
-}
+  .services-container h1 {
+    margin-left: 1vw;
+  }
 
-.services-cards {
-  display: flex;
-}
+  .services-cards {
+    display: flex;
+  }
 
-.services-card {
-  width: 30%;
-  margin: 1vw;
-  background-color: #1d1d1d;
-  box-shadow: 0 0 2px #14ffec;
-}
+  .services-card {
+    width: 30%;
+    margin: 1vw;
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #14ffec;
+  }
 
-.services-card:hover {
-  box-shadow: 0 0 5px #14ffec;
-}
+  .services-card:hover {
+    box-shadow: 0 0 5px #14ffec;
+  }
 
-.services-card:hover .services-card-title {
-  color: #14ffec;
-}
+  .services-card:hover .services-card-title {
+    color: #14ffec;
+  }
 
-.services-card-title {
-  font-size: 0.9em;
-}
+  .services-card-title {
+    font-size: 0.9em;
+  }
 
-.services-card-text {
-  text-align: justify;
+  .services-card-text {
+    text-align: justify;
+  }
 }
 
 /* CSS for screens smaller than 768px (e.g., mobile devices) */
@@ -193,64 +195,64 @@ body {
   .home-container {
     flex-direction: column;
     padding: 12vh 20px 20px;
-  }
 
-  .mini-profile {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
+    .mini-profile {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
 
-  .profile-details {
-    padding: 20px;
-  }
+    .profile-details {
+      padding: 20px;
+    }
 
-  .profile-details row {
-    flex-direction: column;
-  }
+    .profile-details row {
+      flex-direction: column;
+    }
 
-  .profile-skills {
-    flex-direction: column;
-  }
+    .profile-skills {
+      flex-direction: column;
+    }
 
-  .profile-contacts {
-    position: static;
-    margin-top: 20px;
-  }
+    .profile-contacts {
+      position: static;
+      margin-top: 20px;
+    }
 
-  .content-container {
-    width: 100%;
-  }
+    .content-container {
+      width: 100%;
+    }
 
-  .thumbnail {
-    position: static;
-  }
+    .thumbnail {
+      position: static;
+    }
 
-  .thumbnail-container h2 {
-    font-size: 1.2em;
-  }
+    .thumbnail-container h2 {
+      font-size: 1.2em;
+    }
 
-  .thumbnail-button {
-    padding: 15px;
-  }
+    .thumbnail-button {
+      padding: 15px;
+    }
 
-  .services-container {
-    align-items: center;
-  }
+    .services-container {
+      align-items: center;
+    }
 
-  .services-container h1 {
-    margin-bottom: 2vh;
-  }
+    .services-container h1 {
+      margin-bottom: 2vh;
+    }
 
-  .services-cards {
-    flex-direction: column;
-    align-items: center;
-  }
+    .services-cards {
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .services-card {
-    width: 80%;
-    height: 15vh;
-    margin: 1vh 0;
+    .services-card {
+      width: 80%;
+      height: 18vh;
+      margin: 1vh 0;
+    }
   }
 }
 
@@ -258,17 +260,17 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
   .home-container {
     padding: 8vh 2vw 20px;
-  }
 
-  .mini-profile {
-    width: 30vw;
-  }
+    .mini-profile {
+      width: 30vw;
+    }
 
-  .content-container {
-    width: 70vw;
-  }
-  .thumbnail-container {
-    height: 20vh;
+    .content-container {
+      width: 70vw;
+    }
+    .thumbnail-container {
+      height: 20vh;
+    }
   }
 }
 
@@ -277,17 +279,17 @@ body {
   .home-container {
     padding: 60px 3vw 20px;
     display: flex;
-  }
 
-  .mini-profile {
-    width: 20vw;
-    margin-right: 50px;
-    margin-bottom: 0;
-    position: sticky;
-  }
+    .mini-profile {
+      width: 20vw;
+      margin-right: 50px;
+      margin-bottom: 0;
+      position: sticky;
+    }
 
-  .content-container {
-    width: 60vw;
+    .content-container {
+      width: 60vw;
+    }
   }
 
   /* Additional CSS adjustments for laptops with 150% scale in 1920x1080 */
@@ -295,15 +297,15 @@ body {
     .home-container {
       padding: 40px 3vw 20px;
       display: flex;
-    }
 
-    .mini-profile {
-      width: 25vw;
-      position: sticky;
-    }
+      .mini-profile {
+        width: 25vw;
+        position: sticky;
+      }
 
-    .content-container {
-      width: 60vw;
+      .content-container {
+        width: 60vw;
+      }
     }
   }
 }
