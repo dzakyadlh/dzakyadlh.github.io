@@ -39,12 +39,21 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBars} />
         </button>
         <ul>
+          <li className="nav-list" onClick={() => handleClick("/")}>
+            Home
+          </li>
           <li className="nav-list" onClick={() => handleClick("/profile")}>
             Profile
           </li>
-          <li className="nav-list">Projects</li>
-          <li className="nav-list">Contacts</li>
-          <li className="nav-list">About</li>
+          <li className="nav-list" onClick={() => handleClick("/projects")}>
+            Projects
+          </li>
+          <li className="nav-list" onClick={() => handleClick("/contacts")}>
+            Contacts
+          </li>
+          <li className="nav-list" onClick={() => handleClick("/about")}>
+            About
+          </li>
         </ul>
       </nav>
     </React.Fragment>

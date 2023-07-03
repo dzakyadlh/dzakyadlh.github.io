@@ -25,7 +25,7 @@ body {
 }
 
 .profile h6 {
-  color: rgb(179, 179, 179);
+  color: #b3b3b3;
   font-size: 0.8em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
@@ -38,7 +38,6 @@ body {
 
 .profile li {
   display: flex;
-  list-style: none;
   margin-left: 1vw;
   justify-content: space-between;
 }
@@ -68,12 +67,28 @@ body {
 
   .profile-pic {
     border-radius: 50%;
-    width: 10vw;
+    width: 150px;
   }
 
   .thumbnail-body {
     height: 6vw;
     margin-left: 2vw;
+  }
+
+  .profile-contacts ul {
+    width: 100%;
+    display: flex;
+  }
+
+  .contacts-icon {
+    font-size: 1.2em;
+    margin: 0 20px 0 0;
+  }
+
+  .contacts-icon:hover {
+    cursor: pointer;
+    color: #14ffec;
+    transition: 0.5s;
   }
 
   .profile-body {
@@ -82,9 +97,50 @@ body {
     padding: 2vh 2vw;
   }
 
+  .profile-body .aboutme {
+    text-align: justify;
+  }
+
   .profile-body-data {
     display: flex;
+    margin-left: 1vw;
     justify-content: space-between;
+  }
+
+  .exp-desc {
+    max-width: 85%;
+    text-align: justify;
+  }
+
+  .links {
+    color: #14ffec;
+    border: none;
+    text-decoration: none;
+    margin-left: 1vw;
+    font-size: 0.8em;
+    transition: 0.5s;
+  }
+
+  .projects .links:hover {
+    margin-left: 1.5vw;
+  }
+
+  .skills h6 {
+    margin-left: 1vw;
+  }
+
+  .cv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cv .links {
+    color: #b3b3b3;
+    margin: 0;
+  }
+
+  .cv .links:hover {
+    color: #14ffec;
   }
 }
 
@@ -97,13 +153,14 @@ body {
 
     .profile-container {
       width: 100vw;
-      padding: 20px;
+      padding: 10vh 20px 5vh;
       border-radius: 0;
       box-shadow: 0;
     }
 
     .profile-thumbnail {
       flex-direction: column;
+      height: 350px;
     }
   }
 }
