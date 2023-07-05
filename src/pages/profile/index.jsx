@@ -11,8 +11,10 @@ import {
 import Navbar from "../../components/navbar";
 import PP from "../../assets/images/kamiya.jpg";
 import "./style.css";
+import useLocalStorage from "use-local-storage";
 
 const Profile = () => {
+  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
   const navigate = useNavigate();
   const handleClick = (link) => {
     navigate(link);
@@ -51,7 +53,7 @@ const Profile = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <div className="scroll-container profile">
+      <div className="scroll-container profile" data-theme={theme}>
         <div className="profile-container">
           <div className="profile-thumbnail">
             <img className="profile-pic" src={PP} alt="me" />

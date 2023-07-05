@@ -1,11 +1,6 @@
-body {
-  background-color: #121212;
-  color: whitesmoke;
-}
-
 /* Common CSS rules across all screen sizes */
 .home-container h1 {
-  color: #14ffec;
+  color: var(--text-secondary);
   font-size: 1em;
   margin: 2vh 0 1vh;
 }
@@ -15,7 +10,7 @@ body {
 }
 
 .home-container h4 {
-  color: #14ffec;
+  color: var(--text-secondary);
   font-size: 0.8em;
   margin: 5px 0;
 }
@@ -27,29 +22,33 @@ body {
 }
 
 .home-container h6 {
-  color: gray;
+  color: var(--accent);
   font-size: 0.7em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 10px;
 }
 
 .home-container p {
-  color: gray;
+  color: var(--accent);
   font-size: 0.7em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 120%;
 }
 
 .home-container {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  transition: 0.5s;
+
   .mini-profile {
     height: 90vh;
-    background-color: #1d1d1d;
+    background-color: var(--background-second);
     display: flex;
     flex-direction: column;
   }
 
   .me-container {
-    background-color: #222222;
+    background-color: var(--background-third);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,7 +89,7 @@ body {
 
   .profile-skills li span {
     font-size: 30px;
-    color: #14ffec;
+    color: var(--text-secondary);
     margin-bottom: 10px;
   }
 
@@ -114,7 +113,7 @@ body {
   }
 
   .contacts-icon:hover {
-    color: #14ffec;
+    color: var(--text-hover);
     transition: 0.5s;
   }
 
@@ -134,21 +133,21 @@ body {
 
   .thumbnail-container h2 {
     margin: 2vw;
-    text-shadow: 1px 1px 2px #1d1d1d;
+    text-shadow: 1px 1px 2px var(--background-second);
   }
 
   .thumbnail-button {
     margin: 2vw;
     padding: 1vw;
-    color: #14ffec;
-    background-color: #1d1d1d;
+    color: var(--text-secondary);
+    background-color: var(--background-second);
     border: none;
     border-radius: 5px;
-    box-shadow: 0 0 2px #14ffec;
+    box-shadow: 0 0 2px var(--text-secondary);
   }
 
   .thumbnail-button:hover {
-    box-shadow: 0 0 5px #14ffec;
+    box-shadow: 0 0 5px var(--text-hover);
   }
 
   .services-container {
@@ -168,16 +167,16 @@ body {
   .services-card {
     width: 30%;
     margin: 1vw;
-    background-color: #1d1d1d;
-    box-shadow: 0 0 2px #14ffec;
+    background-color: var(--background-second);
+    box-shadow: 0 0 2px var(--text-secondary);
   }
 
   .services-card:hover {
-    box-shadow: 0 0 5px #14ffec;
+    box-shadow: 0 0 5px var(--text-hover);
   }
 
   .services-card:hover .services-card-title {
-    color: #14ffec;
+    color: var(--text-hover);
   }
 
   .services-card-title {

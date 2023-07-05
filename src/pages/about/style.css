@@ -1,11 +1,11 @@
 .about h1 {
   font-size: 3em;
-  color: #14ffec;
+  color: var(--text-secondary);
 }
 
 .about h2 {
   font-size: 2em;
-  color: #14ffec;
+  color: var(--text-secondary);
 }
 
 .about p {
@@ -14,7 +14,8 @@
 
 .about {
   padding: 20px;
-  background-color: #222222;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
 
   .about-container {
     padding: 20px;
@@ -35,9 +36,6 @@
 
   .contacts-list h3 {
     margin: 0 10px;
-  }
-
-  .contacts-list h4 {
   }
 }
 

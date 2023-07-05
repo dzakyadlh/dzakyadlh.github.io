@@ -8,13 +8,13 @@
   top: 0;
   bottom: 0;
   padding: 20px 2vw;
-  background-color: #1d1d1d;
-  color: #eeeeee;
+  background-color: var(--background-second);
+  color: var(--nav);
 }
 
 .sidebar-toggle {
   font-size: 2em;
-  color: #eeeeee;
+  color: var(--nav);
   background-color: transparent;
   border: none;
   margin-bottom: 1vh;
@@ -22,20 +22,20 @@
 }
 
 .sidebar-toggle:hover {
-  color: #14ffec;
+  color: var(--text-hover);
 }
 
 .colormode-toggle {
   background-color: transparent;
   border: none;
-  color: #eeeeee;
+  color: var(--nav);
   font-size: 1.5em;
   margin-top: 2vh;
   transition: 0.5s;
 }
 
 .colormode-toggle:hover {
-  color: #14ffec;
+  color: var(--text-hover);
 }
 
 .nav-container {
@@ -47,8 +47,8 @@
   top: 0;
   bottom: 0;
   padding: 20px 10vw 20px 2vw;
-  background-color: #1d1d1d;
-  color: #eeeeee;
+  background-color: var(--background-second);
+  color: var(--nav);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -63,7 +63,7 @@
 }
 
 .nav-list:hover {
-  color: #14ffec;
+  color: var(--text-hover);
   margin-left: 0.5vw;
   cursor: pointer;
 }
