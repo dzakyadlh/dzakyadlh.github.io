@@ -1,0 +1,52 @@
+.about h1 {
+  font-size: 3em;
+  color: #14ffec;
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #14ffec;
+}
+
+.about p {
+  text-align: justify;
+}
+
+.about {
+  padding: 20px;
+  background-color: #222222;
+
+  .about-container {
+    padding: 20px;
+    width: 70%;
+    line-height: 1.5;
+    border-radius: 10px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts-list h3 {
+    margin: 0 10px;
+  }
+
+  .contacts-list h4 {
+  }
+}
+
+@media (max-width: 1023px) {
+  .about {
+    padding: 80px 20px 0;
+
+    .about-container {
+      width: 100%;
+    }
+  }
+}

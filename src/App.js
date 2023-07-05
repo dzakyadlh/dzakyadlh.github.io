@@ -4,6 +4,7 @@ import "./App.css";
 
 import Home from "./pages/home";
 import Profile from "./pages/profile";
+import About from "./pages/about";
 
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -22,8 +23,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/projects" element={<Home />} />
         <Route path="/services" element={<Home />} />
-        <Route path="/contacts" element={<Home />} />
-        <Route path="/about" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

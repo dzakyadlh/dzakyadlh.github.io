@@ -1,7 +1,24 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f6f1f1;
   overflow-x: hidden;
+}
+
+:root {
+  --background-primary: #121212;
+  --background-second: #1d1d1d;
+  --background-third: #222222;
+  --text-primary: whitesmoke;
+  --text-secondary: #14ffec;
+  --accent: gray;
+}
+
+[data-theme="light"] {
+  --background-primary: #white;
+  --background-second: #ffe6e6;
+  --background-third: #ffb3b3;
+  --text-primary: black;
+  --text-secondary: #990000;
+  --accent: gray;
 }
 
 .main-container {
@@ -22,7 +39,7 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: whitesmoke;
+  background: grey;
 }
 ::-webkit-scrollbar-thumb {
   background: #14ffec;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import useLocalStorage from "use-local-storage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
@@ -7,7 +8,7 @@ import "./style.css";
 const Navbar = () => {
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isLightMode, setIsLightMode] = useState(false);
+  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
   const handleClick = (link) => {
     navigate(link);
   };
@@ -23,11 +24,11 @@ const Navbar = () => {
         </button>
         <button
           className="colormode-toggle"
-          onClick={() => setIsLightMode(!isLightMode)}
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         >
           <FontAwesomeIcon
             icon={faCircleHalfStroke}
-            rotation={`${isLightMode ? 180 : 0}`}
+            rotation={theme === "light" ? 180 : 0}
           />
         </button>
       </div>
@@ -47,9 +48,6 @@ const Navbar = () => {
           </li>
           <li className="nav-list" onClick={() => handleClick("/projects")}>
             Projects
-          </li>
-          <li className="nav-list" onClick={() => handleClick("/contacts")}>
-            Contacts
           </li>
           <li className="nav-list" onClick={() => handleClick("/about")}>
             About
