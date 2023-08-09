@@ -56,7 +56,7 @@
   .profile-thumbnail {
     background-color: var(--background-third);
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     padding: 2vh 2vw;
@@ -68,7 +68,7 @@
   }
 
   .thumbnail-body {
-    height: 6vw;
+    min-height: 150px;
     margin-left: 2vw;
   }
 
