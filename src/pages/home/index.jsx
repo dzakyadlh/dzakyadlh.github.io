@@ -1,5 +1,5 @@
 import React from "react";
-import {} from "@mui/material";
+import useLocalStorage from "use-local-storage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -15,6 +15,7 @@ import PP from "../../assets/images/kamiya.jpg";
 import Thumb from "../../assets/images/sukidakara.png";
 
 const Home = () => {
+  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
   const services = [
     {
       name: "Web Development",
@@ -32,7 +33,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <div className="scroll-container home-container">
+      <div className="scroll-container home-container" data-theme={theme}>
         <div className="mini-profile">
           <div className="me-container">
             <img className="profile-pic" src={PP} alt="me" />

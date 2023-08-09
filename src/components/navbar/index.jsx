@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <div className="sidebar-container">
+      <div className="sidebar-container" data-theme={theme}>
         <button
           className="sidebar-toggle"
           onClick={() => setIsNavOpen(!isNavOpen)}
@@ -32,7 +32,10 @@ const Navbar = () => {
           />
         </button>
       </div>
-      <nav className={`nav-container ${isNavOpen ? "nav-open" : "nav-closed"}`}>
+      <nav
+        className={`nav-container ${isNavOpen ? "nav-open" : "nav-closed"}`}
+        data-theme={theme}
+      >
         <button
           className="sidebar-toggle"
           onClick={() => setIsNavOpen(!isNavOpen)}

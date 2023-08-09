@@ -9,8 +9,10 @@ import {
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../../components/navbar";
 import "./style.css";
+import useLocalStorage from "use-local-storage";
 
 const About = () => {
+  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
   const contacts = [
     {
       name: "LinkedIn",
@@ -41,7 +43,7 @@ const About = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <div className="scroll-container about">
+      <div className="scroll-container about" data-theme={theme}>
         <div className="about-container">
           <h1>About</h1>
           <p>

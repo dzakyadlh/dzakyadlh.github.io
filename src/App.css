@@ -10,15 +10,19 @@ body {
   --text-primary: whitesmoke;
   --text-secondary: #14ffec;
   --accent: gray;
+  --nav: #eeeeee;
+  --text-hover: #14ffec;
 }
 
 [data-theme="light"] {
-  --background-primary: #white;
-  --background-second: #ffe6e6;
-  --background-third: #ffb3b3;
-  --text-primary: black;
+  --background-primary: #f5f5f5;
+  --background-second: #e6e6e6;
+  --background-third: #cccccc;
+  --text-primary: #121212;
   --text-secondary: #990000;
-  --accent: gray;
+  --accent: #cc6666;
+  --nav: #121212;
+  --text-hover: #cc6666;
 }
 
 .main-container {
@@ -39,10 +43,10 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: grey;
+  background: var(--accent);
 }
 ::-webkit-scrollbar-thumb {
-  background: #14ffec;
+  background: var(--text-secondary);
 }
 
 @font-face {

@@ -1,22 +1,17 @@
-body {
-  background-color: #121212;
-  color: whitesmoke;
-}
-
 .profile h1 {
-  color: #14ffec;
+  color: var(--text-secondary);
   font-size: 1.5em;
   margin: 1vh 0;
 }
 
 .profile h2 {
-  color: #14ffec;
+  color: var(--text-secondary);
   margin: 1vh 0;
 }
 
 .profile h3 {
   font-size: 0.8em;
-  color: #14ffec;
+  color: var(--text-secondary);
 }
 
 .profile h4,
@@ -25,7 +20,7 @@ body {
 }
 
 .profile h6 {
-  color: #b3b3b3;
+  color: var(--accent);
   font-size: 0.8em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 200;
@@ -43,21 +38,23 @@ body {
 }
 
 .profile {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
   display: flex;
   justify-content: center;
   padding: 20px;
   line-height: 120%;
 
   .profile-container {
-    background-color: #1d1d1d;
+    background-color: var(--background-second);
     width: 40vw;
-    box-shadow: 0 0 10px #14ffec;
+    box-shadow: 0 0 10px var(--text-secondary);
     min-height: 90vh;
     border-radius: 10px;
   }
 
   .profile-thumbnail {
-    background-color: #222222;
+    background-color: var(--background-third);
     width: 100%;
     height: 30vh;
     display: flex;
@@ -87,7 +84,7 @@ body {
 
   .contacts-icon:hover {
     cursor: pointer;
-    color: #14ffec;
+    color: var(--text-hover);
     transition: 0.5s;
   }
 
@@ -113,7 +110,7 @@ body {
   }
 
   .links {
-    color: #14ffec;
+    color: var(--text-secondary);
     border: none;
     text-decoration: none;
     margin-left: 1vw;
@@ -135,12 +132,12 @@ body {
   }
 
   .cv .links {
-    color: #b3b3b3;
+    color: var(--accent);
     margin: 0;
   }
 
   .cv .links:hover {
-    color: #14ffec;
+    color: var(--text-hover);
   }
 }
 
